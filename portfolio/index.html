@@ -1,13 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Xavier's Portfolio</title>
+</head>
+
+<body>
+
+  <canvas id="bg"></canvas>
+
+  <video id="moodvideo" autoplay loop>
+    <!-- local adress: http://localhost:64111/matrix(1).mp4 -->
+    <source src="/images/matrix(1).mp4" type='video/mp4'>
+    <img id="alternative" src="/images/alternative.jpg" />
+  </video>
+  <nav>
+    <div class="topnav" id="myTopnav">
+        <a id="logo-icon" href="/index.html"><img id="logo-image" src=" http://localhost:57526/logo.png"></a>
+        <a href="#">Javascript-Games</a>
+        <!-- <a href="#">React-Games</a>
+        <a href="#">Python-Games</a> -->
+        <a href="#">Portfolio</a>
+        <a href="#">About</a>
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</nav>
+
+  <main>
+
+    <header>
+      <h1>The JavaScript Game Room</h1>
+      <p> 🎮 Ready, Player One? 👨🏾‍💻 </p>
+    </header>
+
+
+    <blockquote>
+      <p>The JavaScript Matrix is Loading...</p>
+    </blockquote>
+
+    <!-- <section>
+        <h2>📜 Manifesto</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+      </section> -->
+
+
+    <!-- <section id="projects" class="projects-section"> -->
+    <section class="light">
+      <h2>⚒ Projects</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </p>
+      <div class="projects-div">
+        <div class="project-preview" href="#">
+          <img class="project-img"
+            src="https://images.pexels.com/photos/2118045/pexels-photo-2118045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="" />
+          <div class="description">
+            <h1>Project Name</h1>
+            <p>This is a project description that says what the project is, what the project's purpose was, and your
+              role in the project.</p>
+
+
+            <ul>
+              <li>Skills:</li>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Wireframing</a></li>
+            </ul>
+          </div>
+          <div class="project-btn">
+            <a href="#">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-preview" href="#">
+          <img class="project-img"
+            src="https://images.pexels.com/photos/2118045/pexels-photo-2118045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="" />
+          <div class="description">
+            <h1>Project Name</h1>
+            <p>This is a project description that says what the project is, what the project's purpose was, and your
+              role in the project. I coded this game using:</p>
+            <ul>
+
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Wireframing</a></li>
+            </ul>
+          </div>
+          <div class="project-btn">
+            <a href="#">View Project</a>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <!-- <section class="light">
+
+        <h2>🏆 Accomplishments</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+      </section> -->
+
+    <blockquote>
+      <p>“Hope. It is the quintessential human delusion, simultaneously the source of your greatest strength and your
+        greatest weakness.”<br>
+        <br>- The Architect
+      </p>
+    </blockquote>
+
+    <section class="light">
+      <h2>📲 Reach Out To Me</h2>
+
+      <h3>GitHub</h3>
+      <a></a>
+      <h3>Linkedin</h3>
+      <a></a>
+      <h3>Email</h3>
+      <a></a>
+      <h3>Whatsapp</h3>
+      <a></a>
+      <h3>Instagram</h3>
+      <a></a>
+
+
+    </section>
+
+    <blockquote>
+      <p>If You're a Recruiter, Please Hire Me 🙃</p>
+    </blockquote>
+
+
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+
 </html>
