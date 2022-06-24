@@ -241,8 +241,8 @@ blockquote p {
     font-size: 1.2rem;
     padding: 2rem;
     margin-bottom: 35vh; /*var(--spacing);*/
-    margin-left: 0.5rem;
-    /* width: 80vw; */
+    margin-left: 1rem;
+    width: 75vw;
     
   }
 
@@ -250,10 +250,22 @@ blockquote p {
     padding-right: 0px;
   }
 
-  /* .light {
-
+  .project-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 96%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    overflow: hidden;
   }
-   */
+  
 
 }
 
