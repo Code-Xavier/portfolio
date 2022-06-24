@@ -79,10 +79,10 @@ Array(200).fill().forEach(addStar);
 
 //Avatar 
 
-const xavierTexture = new THREE.TextureLoader().load('/js.png')
+const xavierTexture = new THREE.TextureLoader().load('/me.jpg')
 const xavier = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
-  new THREE.MeshBasicMaterial( {map: xavierTexture  })
+  new THREE.MeshBasicMaterial( {/*color:0xff6347,*/ map: xavierTexture  })
 ); 
 
 scene.add(xavier);
