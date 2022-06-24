@@ -42,7 +42,7 @@ renderer.render(scene, camera);
 
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
 const loader = new THREE.TextureLoader();
-const material = new THREE.MeshStandardMaterial({ map: loader.load('/images/t.jpg'), });
+const material = new THREE.MeshStandardMaterial({ map: loader.load('./t.jpg'), });
 const torus = new THREE.Mesh(geometry, material);
 
 scene.add(torus);
@@ -79,8 +79,7 @@ Array(200).fill().forEach(addStar);
 
 //Avatar 
 
-const xavierTexture = new THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/245px-Unofficial_JavaScript_logo_2.svg.png');
-
+const xavierTexture = new THREE.TextureLoader().load('/js.png')
 const xavier = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
   new THREE.MeshBasicMaterial( {map: xavierTexture  })
