@@ -6,6 +6,8 @@ import * as THREE from 'three';
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
+import video1 from '/matrix.mp4';
+
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
@@ -72,8 +74,8 @@ function addStar() {
 Array(200).fill().forEach(addStar);
 
 
-const video = document.getElementById( 'moodvideo' );
-const spaceTexture = new THREE.VideoTexture( video );
+const video = {video1}
+const spaceTexture = new THREE.VideoTexture(video);
 scene.background = spaceTexture;
 // scene.background = spaceTexture.load( 'space.jpg' );
 // scene.background = spaceTexture.load( './matrix(1).mp4' );
