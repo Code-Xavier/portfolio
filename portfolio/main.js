@@ -6,9 +6,6 @@ import * as THREE from 'three';
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
-import img1 from './t.jpg';
-import img2 from './me.jpg';
-
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
@@ -45,7 +42,7 @@ renderer.render(scene, camera);
 
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
 const loader = new THREE.TextureLoader();
-const material = new THREE.MeshStandardMaterial({ map: loader.load({img1}) });
+const material = new THREE.MeshStandardMaterial({ map: loader.load('./t.jpg') });
 const torus = new THREE.Mesh(geometry, material);
 
 scene.add(torus);
@@ -82,7 +79,7 @@ Array(200).fill().forEach(addStar);
 
 //Avatar 
 
-const xavierTexture = new THREE.TextureLoader().load({img2})
+const xavierTexture = new THREE.TextureLoader().load('./me.jpg')
 const xavier = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
   new THREE.MeshBasicMaterial( {/*color:0xff6347,*/ map: xavierTexture  })
