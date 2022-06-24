@@ -4,6 +4,7 @@
 
 body { 
 
+
  } 
 
 canvas {
@@ -203,9 +204,10 @@ blockquote p {
   line-height: 1;
 }
 
-.left {
+/* .left {
   grid-column: 6 / 12;
-}
+
+} */
 
 @media (max-width: 400px) {
 
@@ -220,27 +222,11 @@ blockquote p {
 
 
   main {
-    display: grid;
-    grid-template-columns: auto;
-    /* background-image: url(http://localhost:57526/t.jpg); */
     top: 0;
     left: 0;
  
   }
-
-  /* main img {
-    object-fit: cover;
-    width: 100vw;
-  }
-
-  #bg {
-    display: none;
-  }
-
-  #moodvideo {
-    display: none;
-  } */
-
+  
   blockquote {
     margin-left: 1rem;
   }
@@ -252,7 +238,7 @@ blockquote p {
   }
 
   header {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 2rem;
     margin-bottom: 35vh; /*var(--spacing);*/
     margin-left: 0.5rem;
@@ -264,8 +250,11 @@ blockquote p {
     padding-right: 0px;
   }
 
+  /* .light {
 
-  
+  }
+   */
+
 }
 
 /*projects-grid-styling*/
