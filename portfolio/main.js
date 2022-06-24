@@ -23,16 +23,16 @@ const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-// const renderer = new THREE.WebGLRenderer({
-//   canvas: document.querySelector('#bg')
-// });
-
-const canvas = document.querySelector('#bg');
 const renderer = new THREE.WebGLRenderer({
-  canvas,
-  alpha: true,
-  premultipliedAlpha: false,
+  canvas: document.querySelector('#bg')
 });
+
+// const canvas = document.querySelector('#bg');
+// const renderer = new THREE.WebGLRenderer({
+//   canvas,
+//   alpha: true,
+//   premultipliedAlpha: false,
+// });
 
 renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( window.innerWidth, window.innerHeight );
@@ -72,10 +72,11 @@ function addStar() {
 Array(200).fill().forEach(addStar);
 
 
-
-// const spaceTexture = new THREE.TextureLoader();
-// // scene.background = spaceTexture.load( 'space.jpg' );
-// scene.background = spaceTexture.load( 'https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' );
+const video = document.getElementById( 'moodvideo' );
+const spaceTexture = new THREE.VideoTexture( video );
+scene.background = spaceTexture;
+// scene.background = spaceTexture.load( 'space.jpg' );
+// scene.background = spaceTexture.load( './matrix(1).mp4' );
 
 //Avatar 
 
